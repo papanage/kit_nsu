@@ -1,6 +1,6 @@
-package numberTheory.slowly;
+package utility.numberTheory.slowly;
 
-import numberTheory.FiniteField;
+import utility.numberTheory.FiniteField;
 
 import java.util.Optional;
 

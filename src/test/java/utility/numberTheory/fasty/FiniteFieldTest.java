@@ -1,6 +1,6 @@
-package numberTheory.fasty;
+package utility.numberTheory.fasty;
 
-import numberTheory.FiniteField;
+import utility.numberTheory.FiniteField;
 import org.junit.Assert;
 import org.junit.jupiter.api.Test;
 

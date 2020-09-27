@@ -1,15 +1,16 @@
-package numberTheory.fasty;
+package utility.numberTheory.fasty;
 
-import numberTheory.FiniteField;
+import utility.numberTheory.FiniteField;
 
 import java.util.Optional;
+import java.util.Vector;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class FastyFinite implements FiniteField {
 
 
-    /*
+    /**
     * some more effective method of extension nativeExp()
     * @param base - base of exp
     * @param square - square of base
@@ -31,7 +32,7 @@ public class FastyFinite implements FiniteField {
         return Optional.of(fit(res, p));
     }
 
-    /*
+    /**
      extension of pow(base, square) on finite fields with characteristic p
      */
 

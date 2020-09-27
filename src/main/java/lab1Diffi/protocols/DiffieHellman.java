@@ -1,7 +1,6 @@
-package protocols;
+package lab1Diffi.protocols;
 
-import numberTheory.FiniteField;
-import numberTheory.fasty.FastyFinite;
+import utility.numberTheory.FiniteField;
 
 import java.io.FileInputStream;
 import java.io.IOException;
@@ -15,6 +14,8 @@ import static java.lang.Math.abs;
 
 public class DiffieHellman {
     long  p, g, xa, xb;
+
+
     public DiffieHellman(Path toProp, FiniteField fin){
         try{
             getProp(toProp);
