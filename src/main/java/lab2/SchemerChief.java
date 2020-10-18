@@ -31,9 +31,9 @@ public class SchemerChief {
     private void start() throws Exception{
         FastyFinite fastyFinite = new FastyFinite();
         getProp(toProp);
-        ca = initSecret();
+        ca = Algorithms.getPer(p - 1);
         da = (Algorithms.euclidExternal(ca, p - 1).get(2) + (p - 1)) % (p - 1);
-        cb = initSecret();
+        cb = Algorithms.getPer(p - 1);
         db = (Algorithms.euclidExternal(cb, p - 1).get(2) + (p - 1)) % (p - 1);
         System.out.println("ca = " + ca);
         System.out.println("cb = " + cb);
@@ -73,14 +73,5 @@ public class SchemerChief {
 
     }
 
-    private Long initSecret(){
-        long temp = abs(random.nextLong()) % p;
-        long gcd;
-        do {
-            temp = (temp + 1) % p;
-            gcd = Algorithms.euclidExternal(p - 1, temp).get(0);
-        }
-        while (gcd != 1 && temp != 1);
-        return temp;
-    }
+
 }
