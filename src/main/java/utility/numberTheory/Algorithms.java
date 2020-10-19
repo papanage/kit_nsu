@@ -59,4 +59,8 @@ public class Algorithms {
         while (gcd != 1 && temp != 1);
         return temp;
     }
+
+    public static long hash(long s) {
+        return s;
+    }
 }
