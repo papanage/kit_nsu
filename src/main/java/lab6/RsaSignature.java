@@ -21,8 +21,8 @@ public class RsaSignature {
     FiniteField fin;
     Random random = new Random(Instant.now().hashCode());
 
-    public static void main(String[] args) throws Exception {
-        Path toProp = Paths.get("src/main/resources/conf5lab.properties");
+    public static void main(String[] args) {
+        Path toProp = Paths.get("src/main/resources/conf6lab.properties");
         RsaSignature rsa = new RsaSignature(toProp, new FastyFinite());
         System.out.println("check res: " + check(500, 46514,52891, 3, new FastyFinite()));
 
